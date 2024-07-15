@@ -1,0 +1,70 @@
+.form--width {
+    max-width: 37.5rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.form--dialog {
+    margin-top: 20px;
+}
+
+.form__text {
+    font-size: 0.875rem;
+    font-weight: var(--font-medium);
+    line-height: 130%;
+    margin-top: 12px;
+}
+
+.form__text--fine {
+    display: none;
+}
+
+.form__button {
+    display: block;
+    width: 100%;
+    border: none;
+    outline: transparent;
+    color: white;
+    background-color: var(--red);
+    font-size: 1.25rem;
+    font-family: "Rubik";
+    padding: 20px 100px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.form__button--dialog {
+    padding: 20px 42px;
+    text-transform: none;
+    margin: 40px auto 0 auto;
+}
+
+@media screen and (min-width: 67rem) {
+    .form--width {
+        margin: 100px;
+    }
+
+    .form__text {
+        font-size: 1.2rem;
+    }
+
+    .form__button {
+        width: initial;
+    }
+
+    .form__button:hover {
+        animation: pulse 0.8s infinite;
+    }
+
+    .form__button:focus {
+        transform: scale(1.2);
+    }
+
+    .form__text--fine {
+        display: block;
+        color: #818798;
+        font-weight: normal;
+        font-size: 0.875rem;
+    }
+}

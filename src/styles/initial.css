@@ -1,0 +1,23 @@
+:root {
+    --light-gray: #F5F7F7;
+    --dark-blue: #2D3242;
+    --azure: rgb(1, 185, 198);
+    --azure-fade: rgb(1, 185, 198, 0.05);
+    --red: rgb(253, 77, 53);
+    --red-fade: rgb(253, 77, 53, 0.5);
+
+    --font-medium: 500;
+    --font-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--light-gray);
+    font-family: "Root";
+}

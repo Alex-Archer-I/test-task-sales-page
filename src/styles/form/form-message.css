@@ -1,0 +1,10 @@
+.message {
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.875rem;
+    color: var(--dark-blue);
+}
+
+.message--error {
+    color: var(--red);
+}

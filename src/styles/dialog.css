@@ -1,0 +1,100 @@
+.dialog__title {
+    font-family: "Rubik";
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 25px;
+    margin-bottom: 34px;
+    font-size: 1.5rem;
+}
+
+.dialog__text {
+    text-align: center;
+}
+
+.dialog__text--bold {
+    font-weight: var(--font-bold);
+}
+
+.dialog__text--azure {
+    color: var(--azure);
+}
+
+.dialog__text--bordered {
+    padding: 14px 21px;
+    border: solid 0.1rem var(--azure);
+    border-radius: 50px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    font-size: 0.9rem;
+}
+
+.dialog__text--left {
+    text-align: left;
+}
+
+.dialog__sticker {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--azure);
+    color: white;
+    font-weight: bold;
+    padding: 10px 8px;
+}
+
+.dialog__close {
+    position: absolute;
+    display: block;
+    top: 26px;
+    right: 26px;
+    background-color: transparent;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: none;
+    outline: transparent;
+    cursor: pointer;
+    --bg-color: #CED1D8;
+}
+
+.dialog__close::before,
+.dialog__close::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    height: 1.2rem;
+    width: 0.1rem;
+    background-color: var(--bg-color);
+    border-radius: 5px;
+}
+
+.dialog__close::before {
+    transform: rotate(45deg);
+}
+
+.dialog__close::after {
+    transform: rotate(-45deg);
+}
+
+.dialog__close:hover,
+.dialog__close:focus {
+    transform: scale(1.2);
+    --bg-color: var(--azure);
+}
+
+@media screen and (min-width: 67rem) {
+    .dialog__title {
+        margin-bottom: 34px;
+    }
+
+    .dialog__text {
+        font-size: 1.5rem;
+    }
+
+    .dialog__text--bordered {
+        padding: 14px 28px;
+    }
+
+    .dialog__sticker {
+        left: initial;
+    }
+}

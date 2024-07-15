@@ -1,0 +1,75 @@
+.main {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.main__title {
+    font-family: "Rubik";
+    padding: 110px 20px 0 20px;
+    font-size: 1.5rem;
+}
+
+.main__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.main__img {
+    display: block;
+    width: 277px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.main__dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    border: none;
+    outline: transparent;
+    padding: 50px 20px 20px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.main__dialog::backdrop {
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.main__dialog--open {
+    opacity: 1;
+}
+
+.main__dialog--open::backdrop {
+    opacity: 1;
+}
+
+@media screen and (min-width: 67rem) {
+    .main__content {
+        flex-direction: row;
+        margin-top: 17px;
+    }
+
+    .main__img {
+        width: 434px;
+        margin: 0;
+    }
+
+    .main__title {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .main__dialog {
+        padding: 61px 80px 40px 80px;
+    }
+}

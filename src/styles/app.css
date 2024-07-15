@@ -1,0 +1,14 @@
+@import './fonts.css';
+@import './initial.css';
+@import './animation.css';
+
+@import './main.css';
+
+@import './form/form.css';
+@import './form/radiobuttons.css';
+@import './form/chechbox.css';
+@import './form/form-message.css';
+
+@import './counter.css';
+
+@import './dialog.css';
