@@ -83,8 +83,8 @@ const Form = ({sales, prices, isCounter}) => {
     };
 
     return (
-        <form action="" className="form form--width" ref={formRef} onSubmit={submitHandler}>
-            <fieldset className="radioset">
+        <form className="form form--width" ref={formRef} onSubmit={submitHandler}>
+            <fieldset className="radioset" aria-labelledby="main-title">
                 {radioButtons}
             </fieldset>
             <p className="form__text">Следуя плану на 3 месяца, люди получают в 2 раза лучший результат, чем за 1 месяц</p>

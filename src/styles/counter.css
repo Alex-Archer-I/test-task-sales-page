@@ -11,7 +11,7 @@
 }
 
 .counter__text {
-    font-family: "Root Bold";
+    font-weight: var(--font-bold);
     font-size: 1.875rem;
 }
 
@@ -64,6 +64,6 @@
 }
 
 .counter__words {
-    font-family: "Root Bold";
+    font-weight: var(--font-bold);
     color: #818798;
 }

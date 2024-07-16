@@ -1,15 +1,15 @@
 @font-face {
     font-family: "Bebas Neue";
-    src: url('../assets/fonts/BebasNeue.ttf');
+    src: url('./fonts/BebasNeue.ttf');
 }
 
 @font-face {
     font-family: "Rubik";
-    src: url('../assets/fonts/Rubik.ttf');
+    src: url('./fonts/Rubik.ttf');
 }
 
 @font-face {
     font-family: "Root";
-    src: url('../assets/fonts/pt-root-ui_vf.woff2');
+    src: url('./fonts/pt-root-ui_vf.woff2');
     font-weight: 300 1000;
 }
